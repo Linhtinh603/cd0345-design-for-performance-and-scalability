@@ -1,0 +1,21 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,19214.416943999997,230573.00,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Amazon CloudFront,Amazon CloudFront,0,5271.2,63254.40,USD,"Data transfer out to internet (50 TB per month), Data transfer out to origin (50 TB per month), Number of requests (HTTPS) (100 million per month)"
+My Estimate,US East (N. Virginia),S3,S3 Standard,0,521,6252.00,USD,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),ELB,Application Load Balancer,0,600.43,7205.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),ELB,Network Load Balancer,0,454.43,5453.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour), Average number of new TCP connections (1000 per second), Average TCP connection duration (15 seconds)"
+My Estimate,US East (N. Virginia),"2x Web Sersers, 2x App Servers",Amazon EC2 ,0,5673.906943999999,68086.88,USD,"Tenancy (Shared Instances), Operating system (Linux), Workload (Daily, (Workload days: Sunday, Saturday, Baseline: 4, Peak: 16, Duration of peak: 4 Hr 0 Min)), Advance EC2 instance (c7g.8xlarge), Pricing strategy (On-Demand), EBS DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Enable monitoring (enabled)"
+My Estimate,US East (N. Virginia),VPC with NAT Gateway,Network Address Translation (NAT) Gateway,0,37.35,448.20,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),Amazon RDS,Amazon RDS for PostgreSQL,0,5754.1,69049.20,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (10000), Storage amount (500 GB), Nodes (2), Instance Type (db.m1.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (300 GB), Total Size of Backup Processed for Export (GB) (100 per month)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,902,10824.00,USD,"Hosted Zones (4), Additional Records in Hosted Zones (100000), Basic Checks Within AWS ()"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
